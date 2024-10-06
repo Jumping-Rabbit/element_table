@@ -1,0 +1,1727 @@
+<html>
+
+<head>
+	<title>Periodic Table</title>
+</head>
+<body>
+    <h1>Periodic Table</h1>
+    <style>
+    table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    }
+    th, td {
+    border: 1px solid black;
+    padding: 5px;
+    font-size: xx-large;
+    }
+    .Atomic_num {
+    float: left;
+	color: Black;
+    }
+    .valence {
+    float: right;
+	color: Black;
+    font-size: 30%;
+    }
+    .bottom{
+    display: inline-block;
+	color: Black;
+    font-size: 50%;
+    }
+    .Atomic_num{
+    display: inline-block;
+	color: Black;
+    font-size: 60%;
+    }
+    </style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.top a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.top a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.top a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.top .search {
+  float: right;
+}
+
+.top input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.top .search button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.top .search button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .top .search {
+    float: none;
+  }
+  .top a, .top input[type=text], .top .search button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .top input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+</style>
+</head>
+<body>
+
+
+  <div class="search">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search a element..." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+
+</body>
+
+	<table>
+		<th>
+			<span class="Atomic_num">Atomic num</span>
+			<span class="valence">valence</span>
+			</br>
+			SYMBOL
+			</br>
+			<span class="bottom">Name</span>
+			</br>
+			<span class="bottom">Atomic mass</span>
+		</th>
+	</table>
+	<div id="table">
+    <table>
+        <tr>
+            <th style="color: Green">
+                <span class="Atomic_num">1</span>
+                <span class="valence">-1,+1</span>
+                </br>
+                <a href="#H" style="color: Green">H</a> 
+                </br>
+                <span class="bottom">Hydrogen</span>
+                </br>
+                <span class="bottom">1.008</span>
+            </th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th style="color: Green;">
+                <span class="Atomic_num">2</span>
+                <span class="valence">0</span>
+                </br>
+                <a href="#He" style="color: Green">He</a>
+                </br>
+                <span class="bottom">Helium</span>
+                </br>
+                <span class="bottom">4.003</span>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <span class="Atomic_num">3</span>
+                <span class="valence">+1</span>
+                </br>
+                <a href="#Li" style="color: Black">Li</a>
+                </br>
+                <span class="bottom">Lithium</span>
+                </br>
+                <span class="bottom">6.941</span>
+            </th>
+            <th>
+                <span class="Atomic_num">4</span>
+                <span class="valence">+2</span>
+                </br>
+                <a href="#Be" style="color: Black">Be</a>
+                </br>
+                <span class="bottom">Beryllium</span>
+                </br>
+                <span class="bottom">9.012</span>
+            </th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th>
+                <span class="Atomic_num">5</span>
+                <span class="valence">+3</span>
+                </br>
+                <a href="#B" style="color: Black">B</a>
+                </br>
+                <span class="bottom">Boron</span>
+                </br>
+                <span class="bottom">10.811</span>
+            </th>
+            <th>
+                <span class="Atomic_num">6</span>
+                <span class="valence">+4,+3,+2</span>
+                <span class="valence">,+1,-4,-3</span>
+                <span class="valence">,-2,-1</span>
+                </br>
+                <a href="#C" style="color: Black">C</a>
+                </br>
+                <span class="bottom">Carbon</span>
+                </br>
+                <span class="bottom">12.011</span>
+            </th>
+            <th style="color: Green;">
+                <span class="Atomic_num">7</span>
+                <span class="valence">+5,+3,-3</span>
+                </br>
+                <a href="#N" style="color: Green">N</a>
+                </br>
+                <span class="bottom">Nitrogen</span>
+                </br>
+                <span class="bottom">14.007</span>
+            </th>
+            <th style="color: Green;">
+                <span class="Atomic_num">8</span>
+                <span class="valence">-2</span>
+                </br>
+                <a href="#O" style="color: Green">O</a>
+                </br>
+                <span class="bottom">Oxygen</span>
+                </br>
+                <span class="bottom">15.999</span>
+            </th>
+            <th style="color: Green;">
+                <span class="Atomic_num">9</span>
+                <span class="valence">-1</span>
+                </br>
+                <a href="#F" style="color: Green">F</a>
+                </br>
+                <span class="bottom">Flourine</span>
+                </br>
+                <span class="bottom">18.998</span>
+            </th>
+            <th style="color: Green;">
+                <span class="Atomic_num">10</span>
+                <span class="valence">0</span>
+                </br>
+                <a href="#Ne" style="color: Green">Ne</a>
+                </br>
+                <span class="bottom">Neon</span>
+                </br>
+                <span class="bottom">20.180</span>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <span class="Atomic_num">11</span>
+                <span class="valence">+1</span>
+                </br>
+                <a href="#Na" style="color: Black">Na</a>
+                </br>
+                <span class="bottom">Sodium</span>
+                </br>
+                <span class="bottom">22.990</span>
+            </th>
+            <th>
+                <span class="Atomic_num">12</span>
+                <span class="valence">+2</span>
+                </br>
+                <a href="#Mg" style="color: Black">Mg</a>
+                </br>
+                <span class="bottom">Magnesium</span>
+                </br>
+                <span class="bottom">24.305</span>
+            </th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th>
+                <span class="Atomic_num">13</span>
+                <span class="valence">+3</span>
+                </br>
+                <a href="#Al" style="color: Black">Al</a>
+                </br>
+                <span class="bottom">Aluminum</span>
+                </br>
+                <span class="bottom">10.811</span>
+            </th>
+            <th>
+                <span class="Atomic_num">14</span>
+                <span class="valence">+4,-4</span>
+                </br>
+                <a href="#Si" style="color: Black">Si</a>
+                </br>
+                <span class="bottom">Silicon</span>
+                </br>
+                <span class="bottom">28.086</span>
+            </th>
+            <th>
+                <span class="Atomic_num">15</span>
+                <span class="valence">+5,+3,-3</span>
+                </br>
+                <a href="#P" style="color: Black">P</a>
+                </br>
+                <span class="bottom">Phosphorus</span>
+                </br>
+                <span class="bottom">30.974</span>
+            </th>
+            <th>
+                <span class="Atomic_num">16</span>
+                <span class="valence">+6,+4,+2</span>
+				<span class="valence">,-2</span>
+                </br>
+                <a href="#S" style="color: Black">S</a>
+                </br>
+                <span class="bottom">Sulfur</span>
+                </br>
+                <span class="bottom">32.066</span>
+            </th>
+            <th style="color: Green;">
+                <span class="Atomic_num">17</span>
+                <span class="valence">+7,+5,+3</span>
+				<span class="valence">,+1,-1</span>
+                </br>
+                <a href="#Cl" style="color: Green">Cl</a>
+                </br>
+                <span class="bottom">Chlorine</span>
+                </br>
+                <span class="bottom">35.453</span>
+            </th>
+            <th style="color: Green;">
+                <span class="Atomic_num">18</span>
+                <span class="valence">0</span>
+                </br>
+                <a href="#Ar" style="color: Green">Ar</a>
+                </br>
+                <span class="bottom">Argon</span>
+                </br>
+                <span class="bottom">39.948</span>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <span class="Atomic_num">19</span>
+                <span class="valence">+1</span>
+                </br>
+                <a href="#K" style="color: Black">K</a>
+                </br>
+                <span class="bottom">Potassium</span>
+                </br>
+                <span class="bottom">39.098</span>
+            </th>
+            <th>
+                <span class="Atomic_num">20</span>
+                <span class="valence">+2</span>
+                </br>
+                <a href="#Ca" style="color: Black">Ca</a>
+                </br>
+                <span class="bottom">Cadium</span>
+                </br>
+                <span class="bottom">40.078</span>
+            </th>
+            <th>
+                <span class="Atomic_num">21</span>
+                <span class="valence">+3</span>
+                </br>
+                <a href="#Sc" style="color: Black">Sc</a>
+                </br>
+                <span class="bottom">Scandium</span>
+                </br>
+                <span class="bottom">44.956</span>
+            </th>
+            <th>
+                <span class="Atomic_num">22</span>
+                <span class="valence">+4</span>
+                </br>
+                <a href="#Ti" style="color: Black">Ti</a>
+                </br>
+                <span class="bottom">Titanium</span>
+                </br>
+                <span class="bottom">47.88</span>
+            </th>
+            <th>
+                <span class="Atomic_num">23</span>
+                <span class="valence">+5</span>
+                </br>
+                <a href="#V" style="color: Black">V</a>
+                </br>
+                <span class="bottom">Vanadium</span>
+                </br>
+                <span class="bottom">50.942</span>
+            </th>
+            <th>
+                <span class="Atomic_num">24</span>
+                <span class="valence">+6, +3</span>
+                </br>
+                <a href="#Cr" style="color: Black">Cr</a>
+                </br>
+                <span class="bottom">Chronuim</span>
+                </br>
+                <span class="bottom">51.996</span>
+            </th>
+            <th>
+                <span class="Atomic_num">25</span>
+                <span class="valence">+7, +4, +2</span>
+                </br>
+                <a href="#Mn" style="color: Black">Mn</a>
+                </br>
+                <span class="bottom">Manganese</span>
+                </br>
+                <span class="bottom">54.938</span>
+            </th>
+            <th>
+                <span class="Atomic_num">26</span>
+                <span class="valence">+6, +3, +2</span>
+                </br>
+                <a href="#Fe" style="color: Black">Fe</a>
+                </br>
+                <span class="bottom">Iron</span>
+                </br>
+                <span class="bottom">55.845</span>
+            </th>
+            <th>
+                <span class="Atomic_num">27</span>
+                <span class="valence">+3, +2</span>
+                </br>
+                <a href="#Co" style="color: Black">Co</a>
+                </br>
+                <span class="bottom">Cobalt</span>
+                </br>
+                <span class="bottom">58.933</span>
+            </th>
+            <th>
+                <span class="Atomic_num">28</span>
+                <span class="valence">+2</span>
+                </br>
+                <a href="#Ni" style="color: Black">Ni</a>
+                </br>
+                <span class="bottom">Nickel</span>
+                </br>
+                <span class="bottom">58.693</span>
+            </th>
+            <th>
+                <span class="Atomic_num">29</span>
+                <span class="valence">+2</span>
+                </br>
+                <a href="#Cu" style="color: Black">Cu</a>
+                </br>
+                <span class="bottom">Copper</span>
+                </br>
+                <span class="bottom">63.546</span>
+            </th>
+            <th>
+                <span class="Atomic_num">30</span>
+                <span class="valence">+2</span>
+                </br>
+                <a href="#Zn" style="color: Black">Zn</a>
+                </br>
+                <span class="bottom">Zink</span>
+                </br>
+                <span class="bottom">65.38</span>
+            </th>
+            <th>
+                <span class="Atomic_num">31</span>
+                <span class="valence">+3</span>
+                </br>
+                <a href="#Ga" style="color: Black">Ga</a>
+                </br>
+                <span class="bottom">Gallium</span>
+                </br>
+                <span class="bottom">69.723</span>
+            </th>
+            <th>
+                <span class="Atomic_num">32</span>
+                <span class="valence">+4, +2, -4</span>
+                </br>
+                <a href="#Ge" style="color: Black">Ge</a>
+                </br>
+                <span class="bottom">Germanium</span>
+                </br>
+                <span class="bottom">72.631</span>
+            </th>
+            <th>
+                <span class="Atomic_num">33</span>
+                <span class="valence">+5, +3, -3</span>
+                </br>
+                <a href="#Ar" style="color: Black">Ar</a>
+                </br>
+                <span class="bottom">Arsenic</span>
+                </br>
+                <span class="bottom">74.922</span>
+            </th>
+            <th>
+                <span class="Atomic_num">34</span>
+                <span class="valence">+6, +4, +2,</span>
+				<span class="valence">-2</span>
+                </br>
+                <a href="#Se" style="color: Black">Se</a>
+                </br>
+                <span class="bottom">Selenium</span>
+                </br>
+                <span class="bottom">78.971</span>
+            </th>
+            <th style="color: Blue;">
+                <span class="Atomic_num">35</span>
+                <span class="valence">+5, +3, +1,</span>
+				<span class="valence">-1</span>
+                </br>
+                <a href="#Br" style="color: Blue">Br</a>
+                </br>
+                <span class="bottom">Bromine</span>
+                </br>
+                <span class="bottom">79.904</span>
+            </th>
+            <th style="color: Green;">
+                <span class="Atomic_num">36</span>
+                <span class="valence">+2, 0</span>
+                </br>
+                <a href="#Kr" style="color: Green">Kr</a>
+                </br>
+                <span class="bottom">Krypton</span>
+                </br>
+                <span class="bottom">84.798</span>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <span class="Atomic_num">37</span>
+                <span class="valence">+1</span>
+                </br>
+                <a href="#Rb" style="color: Black">Rb</a>
+                </br>
+                <span class="bottom">Rubidium</span>
+                </br>
+                <span class="bottom">85.468</span>
+            </th>
+            <th>
+                <span class="Atomic_num">38</span>
+                <span class="valence">+2</span>
+                </br>
+                <a href="#Sr" style="color: Black">Sr</a>
+                </br>
+                <span class="bottom">Strontium</span>
+                </br>
+                <span class="bottom">87.62</span>
+            </th>
+            <th>
+                <span class="Atomic_num">39</span>
+                <span class="valence">+3</span>
+                </br>
+                <a href="#Y" style="color: Black">Y</a>
+                </br>
+                <span class="bottom">Yttrium</span>
+                </br>
+                <span class="bottom">88.906</span>
+            </th>
+            <th>
+                <span class="Atomic_num">40</span>
+                <span class="valence">+4</span>
+                </br>
+                <a href="#Zr" style="color: Black">Zr</a>
+                </br>
+                <span class="bottom">Zirconium</span>
+                </br>
+                <span class="bottom">91.224</span>
+            </th>
+            <th>
+                <span class="Atomic_num">41</span>
+                <span class="valence">+5</span>
+                </br>
+                <a href="#Nb" style="color: Black">Nb</a>
+                </br>
+                <span class="bottom">Niobium</span>
+                </br>
+                <span class="bottom">92,906</span>
+            </th>
+            <th>
+                <span class="Atomic_num">42</span>
+                <span class="valence">6, +4</span>
+                </br>
+                <a href="#Mo" style="color: Black">Mo</a>
+                </br>
+                <span class="bottom">Molybdenum</span>
+                </br>
+                <span class="bottom">95.95</span>
+            </th>
+            <th>
+                <span class="Atomic_num">43</span>
+                <span class="valence">+7, +4</span>
+                </br>
+                <a href="#Tc" style="color: Black">Tc</a>
+                </br>
+                <span class="bottom">Technetium</span>
+                </br>
+                <span class="bottom">98.907</span>
+            </th>
+            <th>
+                <span class="Atomic_num">44</span>
+                <span class="valence">+4, +3</span>
+                </br>
+                <a href="#Ru" style="color: Black">Ru</a>
+                </br>
+                <span class="bottom">Ruthenium</span>
+                </br>
+                <span class="bottom">101.07</span>
+            </th>
+            <th>
+                <span class="Atomic_num">45</span>
+                <span class="valence">+3</span>
+                </br>
+                <a href="#Rh" style="color: Black">Rh</a>
+                </br>
+                <span class="bottom">Rhodium</span>
+                </br>
+                <span class="bottom">102.906</span>
+            </th>
+            <th>
+                <span class="Atomic_num">46</span>
+                <span class="valence">+4, +2</span>
+                </br>
+                <a href="#Pd" style="color: Black">Pd</a>
+                </br>
+                <span class="bottom">Palladium</span>
+                </br>
+                <span class="bottom">106.42</span>
+            </th>
+            <th>
+                <span class="Atomic_num">47</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">48</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">49</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">50</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">51</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">52</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">53</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th style="color: Green;">
+            <th>
+                <span class="Atomic_num">54</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Green"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <span class="Atomic_num">55</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">56</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">57-71</span>
+                <span class="valence"></span>
+                </br>
+                
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">72</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">73</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">74</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">75</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">76</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">77</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">78</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">79</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th style="color: Blue;">
+                <span class="Atomic_num">80</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Blue"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">81</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">82</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">83</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">84</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">85</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th style="color: Green;">
+                <span class="Atomic_num">86</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Green"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <span class="Atomic_num">87</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">88</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">89-103</span>
+                <span class="valence"></span>
+                </br>
+                
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">104</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">105</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">106</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">107</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">108</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">109</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">110</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">111</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">112</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">113</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">114</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">115</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">116</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">117</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">118</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+        </tr>
+    </table>
+
+
+    <table>
+        <tr>
+            <th>
+                <span class="Atomic_num">57</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">58</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">59</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">60</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">61</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">62</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">63</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">64</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">65</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">66</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">67</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">68</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">69</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">70</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">71</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <span class="Atomic_num">89</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">90</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">91</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">92</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">93</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">94</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">95</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">96</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">97</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">98</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">99</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">100</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">101</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">102</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+            <th>
+                <span class="Atomic_num">103</span>
+                <span class="valence"></span>
+                </br>
+                <a href="#" style="color: Black"></a>
+                </br>
+                <span class="bottom"></span>
+                </br>
+                <span class="bottom"></span>
+            </th>
+        </tr>
+    </table>
+	</div>
+</body>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+<body>
+	<div id="H">
+		<h1><a href="#table" style="color: Black">Hydrogen</a></h1>
+	<div id="He">
+		<h1><a href="#table" style="color: Black">Helium</a></h1>
+	<div id="Li">
+		<h1><a href="#table" style="color: Black">Lithium</a></h1>
+	<div id="Be">
+		<h1><a href="#table" style="color: Black">Beryllium</a></h1>
+	<div id="B">
+		<h1><a href="#table" style="color: Black">Boron</a></h1>
+	<div id="C">
+		<h1><a href="#table" style="color: Black">Carbon</a></h1>
+	<div id="N">
+		<h1><a href="#table" style="color: Black">Nitrogen</a></h1>
+	<div id="O">
+		<h1><a href="#table" style="color: Black">Oxygen</a></h1>
+	<div id="F">
+		<h1><a href="#table" style="color: Black">Flourine</a></h1>
+	<div id="Ne">
+		<h1><a href="#table" style="color: Black">Neon</a></h1>
+	<div id="Na">
+		<h1><a href="#table" style="color: Black">Sodium</a></h1>
+	<div id="Mg">
+		<h1><a href="#table" style="color: Black">Magnesium</a></h1>
+	<div id="Al">
+		<h1><a href="#table" style="color: Black">Aluminum</a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
+	<div id="">
+		<h1><a href="#table" style="color: Black"></a></h1>
